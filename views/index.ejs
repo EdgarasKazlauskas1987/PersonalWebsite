@@ -11,7 +11,7 @@
         <body>
                 <div class="container" id="div-container">
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-7" style="background-color: #89bdd3">
                             <div style="font-size: 70px; font-family: 'Oswald'; text-align: center; font-weight: bold; line-height: 90%">
                                 MY<br>
                                 NAME<br>
@@ -33,30 +33,45 @@
                             <ul>
                                 <li>Experience in agile software development frameworks like SCRUM and Extreme programing</li>
                                 <li>Unified process and pair programing</li>
-                                <a href="/projects">Projects</a>
                             </ul>
                              </div>
                              </div>
                              <div>
                             <p style="display: inline-block; font-family: 'Lobster', cursive">Visit my</p>
                             <div style="display: inline-block">
-                                <a class="btn btn-success homepage-button" href="/projects">
+                                <a class="btn homepage-button button-with-element-in-middle" href="/projects">
                                     <div><span class="glyphicon glyphicon-home"></span> Projects</div>
                                 </a>
                             </div>
                             <div style="display: inline-block">
-                                <a class="btn btn-success homepage-button" href="https://github.com/EdgarasKarolina">
-                                    <img src="/images/github_icon.png" style="width: 100%; height: 100%;" id="image-not-blurry">
+                                <a class="btn btn-success homepage-button button-with-icon" style="background-color: #e3e3e3; border-color: #e3e3e3" href="https://github.com/EdgarasKarolina">
+                                    <img src="/images/gb.png" style="width: 100%; height: 100%;" id="image-not-blurry">
                                 </a>
                             </div>
                             <div style="display: inline-block">
-                                <a class="btn btn-success homepage-button" href="https://github.com/EdgarasKarolina">
-                                    <img src="/images/linkedin.png" style="width: 100%; height: 100%;" id="image-not-blurry">
+                                <a class="btn btn-success homepage-button button-with-icon" style="background-color: #e3e3e3; border-color: #e3e3e3" href="https://github.com/EdgarasKarolina">
+                                    <img src="/images/Linked-in.png" style="width: 100%; height: 100%;" id="image-not-blurry">
                                 </a>
                             </div>
                              </div>
+                            
+<form action="/sendEmail" method="POST">
+<div class="row">
+    <div class="col-md-6">
+  <input type="email" name="email" placeholder="Email" required="required">
+    </div>
+    <div class="col-md-6">
+  <input type="text" name="subject" placeholder="Subject" required="required">
+    </div>
+</div>
+  <br>
+  <input type="text" name="message" placeholder="Message" required="required">
+  <br><br>
+  <input type="submit" value="Send">
+</form> 
+
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5" style="background-color: #9ad3de">
                             <img id="profile-image" src="/images/foto.jpg">
                             <pre>
                                 Tropical Storm Bill hit the Gulf Coast of the United States
