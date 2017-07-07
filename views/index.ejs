@@ -3,90 +3,84 @@
         <head>
             <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', rel='stylesheet', media='screen'>
             <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
-            <link rel="stylesheet" type="text/css" href="/design/css/my_css.css">
+            <link rel="stylesheet" type="text/css" href="/design/css/home_page.css">
             <link rel="stylesheet" href="/fonts/Oswald/Oswald-Regular.ttf">
             <link rel="stylesheet" href="/fonts/Lobster/Lobster-Regular.ttf">
             <link rel="stylesheet" href="/fonts/Satisfy/Satisfy-Regular.ttf">
+            <link rel="stylesheet" href="/fonts/Arvo/Arvo-BoldItalic.ttf">
+            <link rel="stylesheet" href="/fonts/Acme/Acme-Regular.ttf">
+            <script type="text/javascript" src="javascript.js"></script>
         </head>
         <body>
                 <div class="container" id="div-container">
                     <div class="row">
-                        <div class="col-md-7" style="background-color: #89bdd3">
-                            <div style="font-size: 70px; font-family: 'Oswald'; text-align: center; font-weight: bold; line-height: 90%">
-                                MY<br>
-                                NAME<br>
-                                IS:<br>
-                                Edgaras<br>
-                                Kazlauskas
-                            </div>
+                        <div class="col-md-6" style="background-color: #89bdd3">
+                            <ul style="font-size: 70px; font-family: 'Oswald'; font-weight: bold; line-height: 90%; width: 50%; margin: auto;
+                            list-style-type:none">
+                                <li style="color: white">MY</li>
+                                <li style="color: white">NAME</li>
+                                <li style="color: white">IS:</li>
+                                <li style="color: #e3e3e3">Edgaras</li>
+                                <li style="color: #e3e3e3">Kazlauskas</li>
+                            </ul>
                              <div>
-                                 <div style="width: 50%; margin: auto">
-                            <p> Experience in software and technologies:</p>                          
-                            <ul>
+                                 <div style="width: 55%; margin: auto">
+                            <p style="font-weight: bold; font-family: 'Oswald'; font-size: 19px"> Experience in software and technologies:</p>                          
+                            <ul style="font-weight: bold; font-family: 'Arvo'; font-size: 16px">
                                 <li>Programing with Java (Desktop and Android applications)</li>
                                 <li>ASP.NET MVC 5 web application framework with Visual Studio 2015</li>
                                 <li>Back-end web API development using Node.js server and MongoDB database (JavaScript)</li>
                                 <li>Design and styling with HTML/CSS</li>
                                 <li>Git version control system</li>
                             </ul>
-                            <p>Process management:</p>
-                            <ul>
+                            <p style="font-weight: bold; font-family: 'Oswald'; font-size: 19px">Process management:</p>
+                            <ul style="font-weight: bold; font-family: 'Arvo'; font-size: 16px">
                                 <li>Experience in agile software development frameworks like SCRUM and Extreme programing</li>
                                 <li>Unified process and pair programing</li>
                             </ul>
                              </div>
                              </div>
-                             <div>
-                            <p style="display: inline-block; font-family: 'Lobster', cursive">Visit my</p>
-                            <div style="display: inline-block">
+
+
+                             <div class="row" style=" margin: auto">
+                                     <p class="col-md-3" style="display: inline-block; font-family: 'Lobster', cursive;
+                            font-size: 18px">Please visit my</p>
+                            <div class="col-md-3" >
                                 <a class="btn homepage-button button-with-element-in-middle" href="/projects">
                                     <div><span class="glyphicon glyphicon-home"></span> Projects</div>
                                 </a>
                             </div>
-                            <div style="display: inline-block">
+                            <div class="col-md-3" >
                                 <a class="btn btn-success homepage-button button-with-icon" style="background-color: #e3e3e3; border-color: #e3e3e3" href="https://github.com/EdgarasKarolina">
                                     <img src="/images/gb.png" style="width: 100%; height: 100%;" id="image-not-blurry">
                                 </a>
                             </div>
-                            <div style="display: inline-block">
+                            <div class="col-md-3" >
                                 <a class="btn btn-success homepage-button button-with-icon" style="background-color: #e3e3e3; border-color: #e3e3e3" href="https://github.com/EdgarasKarolina">
                                     <img src="/images/Linked-in.png" style="width: 100%; height: 100%;" id="image-not-blurry">
                                 </a>
                             </div>
                              </div>
                             
-<form action="/sendEmail" method="POST">
-<div class="row">
-    <div class="col-md-6">
-  <input type="email" name="email" placeholder="Email" required="required">
-    </div>
-    <div class="col-md-6">
-  <input type="text" name="subject" placeholder="Subject" required="required">
-    </div>
-</div>
-  <br>
-  <input type="text" name="message" placeholder="Message" required="required">
-  <br><br>
-  <input type="submit" value="Send">
-</form> 
+<form id="inquiry_form" action="/sendEmail" method="POST" style="margin: auto; margin-top: 20px; width:60%">
+    <input type="email" name="email" placeholder="Email" required="required">
+    <input type="text" name="subject" placeholder="Subject" required="required" style="margin-left: 8px"> <br>
+    <textarea type="text" name="message" placeholder="Message" required="required" style="width: 370px; max-width: 100%;
+     height: 175px; margin-top: 8px"></textarea>
+    <br><br>
+    <input type="submit" value="Send">
+    <input type="button" value="Clear" onclick="resetInquiryForm()">
+</form>
 
                         </div>
-                        <div class="col-md-5" style="background-color: #9ad3de">
-                            <img id="profile-image" src="/images/foto.jpg">
-                            <pre>
-                                Tropical Storm Bill hit the Gulf Coast of the United States
-                                in the summer of 2003. The second storm of that Atlantic 
-                                hurricane season, Bill developed from a tropical wave on June
-                                29 to the north of the Yucatán Peninsula. It slowly organized
-                                as it moved northward, and reached a peak of 60 mph (95 km/h)
-                                shortly before making landfall in south-central Louisiana. It
-                                produced a moderate storm surge, causing tidal flooding. In 
-                                Montegut in the southeastern portion of the state, a levee was 
-                                breached, flooding many homes, and in Florida, two swimmers drowned. 
-                                As Bill accelerated to the northeast, moisture from the storm, 
-                                combined with cold air from an approaching cold front, produced 
-                                an outbreak of 34 tornadoes. 
+                        <div class="col-md-6" style="background-color: #9ad3de; padding-left: 0px; padding-right: 0px">
+                            <img id="profile-image" src="/images/my_picture.jpg">
+                            <div class="row">
+                                <pre class="col-md-11" id="text_about_me" rows="12" cols="400">
+What is going on with these stupid people i have no idea. kazkokie sudai tikrai vyksta, bet kas tai gali suprasti as nezinau. Kauno Zalgitis buvo ir bus stipriausi ir niekas jiems.  
                             </pre>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
