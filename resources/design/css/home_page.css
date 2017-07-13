@@ -44,7 +44,29 @@
 
 #text_about_me {
     max-width: 100%;
-    word-break: keep-all;
-    padding: 0px;
+    word-break: keep-all; 
+    padding: 15px;
     margin: 0px;
+    border: none;
+    background-color: #9ad3de;
+
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+#inquiry_form {
+    border: 10px solid transparent;
+    padding: 5px;
+    -webkit-border-image: url(images/border-curve.png) 1 round; /* Safari 3.1-5 */
+    -o-border-image: url(images/border-curve.png) 1 round; /* Opera 11-12.1 */
+    border-image: url(border-curve.png) 25 30 10 20 repeat stretch; 
+   /* border-image-slice: 30;
+    border-image-outset: 1;
+    border-image-repeat: round; */
+  /*  border-image-slice: 30 30% 45 10%; */
+    border-image-outset: 1;
+    border-spacing: 10px;  
 }

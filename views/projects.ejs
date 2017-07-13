@@ -1,1 +1,51 @@
-here will be my projects
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/design/css/projects_page.css">
+        <link rel="stylesheet" type="text/css" href="/design/css/home_page.css">
+
+    </head>
+    <body>
+
+        <table class="table">
+            <tr>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Programing languages
+                </th>
+                <th>
+                    Source Code
+                </th>
+            </tr>
+
+        <% for (i = 0; i < projectTitle.length; i++) { %>
+            <tr> 
+                <td>
+                    <%= projectTitle[i] %>
+                </td>
+                <td>
+                    <%= projectDescription[i] %>
+                </td>
+                <td>
+                    <%= projectLanguage[i] %>
+                </td>
+                <td>
+                      <div>
+                                <a class="btn homepage-button button-with-element-in-middle" style="color: #368BC1" href="<%= projectGitHubLinks[i] %>" target="_blank">
+                                    <div><span class="glyphicon glyphicon-open"></span> Click here!</div>
+                                </a>
+                            </div>
+                </td>
+                 
+            </tr>
+         <%   }  %>
+        </table>
+
+    <body>
+</html>

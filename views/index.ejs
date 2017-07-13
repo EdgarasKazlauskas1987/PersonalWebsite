@@ -9,6 +9,8 @@
             <link rel="stylesheet" href="/fonts/Satisfy/Satisfy-Regular.ttf">
             <link rel="stylesheet" href="/fonts/Arvo/Arvo-BoldItalic.ttf">
             <link rel="stylesheet" href="/fonts/Acme/Acme-Regular.ttf">
+            <link rel="stylesheet" href="/fonts/Lemonada/Lemonada-SemiBold.ttf">
+            <link rel="stylesheet" href="/fonts/Kurale/Kurale-Regular.ttf">
             <script type="text/javascript" src="javascript.js"></script>
         </head>
         <body>
@@ -24,7 +26,7 @@
                                 <li style="color: #e3e3e3">Kazlauskas</li>
                             </ul>
                              <div>
-                                 <div style="width: 55%; margin: auto">
+                                 <div style="width: 55%; margin: auto; margin-top: 17px; margin-bottom: 17px;">
                             <p style="font-weight: bold; font-family: 'Oswald'; font-size: 19px"> Experience in software and technologies:</p>                          
                             <ul style="font-weight: bold; font-family: 'Arvo'; font-size: 16px">
                                 <li>Programing with Java (Desktop and Android applications)</li>
@@ -40,9 +42,35 @@
                             </ul>
                              </div>
                              </div>
+<pre style="text-align: center; border: none; background-color: #89bdd3; font-family: 'Kurale'; font-size: 19px;"> You can contact me on: </pre>
+<div>
+    <div class="col-md-6">
+        <p style="text-align: center"><span class="glyphicon glyphicon-phone"></span> Tel: +45 71862945</p>
+    </div>
+    <div class="col-md-6">
+       <p style="text-align: center"><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:edgarasvilija@gmail.com">edgarasvilija@gmail.com</a></p> 
+    </div>             
+</div>
 
+<pre style="text-align: center; border: none; background-color: #89bdd3; font-size: 19px;"> ... or you can fill this inquiry form </pre>       
+<form id="inquiry_form" action="/sendEmail" method="POST" style="margin: auto; margin-top: 20px; width:60%;">
+    <input type="email" name="email" placeholder="Email" required="required" style="background-color: #e3e3e3">
+    <input type="text" name="subject" placeholder="Subject" required="required" style="margin-left: 8px; ; background-color: #e3e3e3;"> <br>
+    <textarea type="text" name="message" placeholder="Message" required="required" style="width: 370px; max-width: 100%;
+     height: 175px; margin-top: 8px; ; background-color: #e3e3e3"></textarea>
+    <br><br>
+    <input type="submit" value="Send">
+    <input type="button" value="Clear" onclick="resetInquiryForm()">
+</form>
 
-                             <div class="row" style=" margin: auto">
+                        </div>
+                        <div class="col-md-6" style="background-color: #9ad3de; padding-left: 0px; padding-right: 0px;">
+                            <img id="profile-image" src="/images/my_picture.jpg">
+                            
+                                <pre class="col-md-12" id="text_about_me" rows="12" cols="100" style="font-family: 'Arvo'; font-size: 16px">
+I enjoy reading, traveling and doing various outdoor sports which makes me fit both mentally and physically.   
+                            </pre>  
+                            <div class="row" style=" margin: auto">
                                      <p class="col-md-3" style="display: inline-block; font-family: 'Lobster', cursive;
                             font-size: 18px">Please visit my</p>
                             <div class="col-md-3" >
@@ -60,27 +88,7 @@
                                     <img src="/images/Linked-in.png" style="width: 100%; height: 100%;" id="image-not-blurry">
                                 </a>
                             </div>
-                             </div>
-                            
-<form id="inquiry_form" action="/sendEmail" method="POST" style="margin: auto; margin-top: 20px; width:60%">
-    <input type="email" name="email" placeholder="Email" required="required">
-    <input type="text" name="subject" placeholder="Subject" required="required" style="margin-left: 8px"> <br>
-    <textarea type="text" name="message" placeholder="Message" required="required" style="width: 370px; max-width: 100%;
-     height: 175px; margin-top: 8px"></textarea>
-    <br><br>
-    <input type="submit" value="Send">
-    <input type="button" value="Clear" onclick="resetInquiryForm()">
-</form>
-
-                        </div>
-                        <div class="col-md-6" style="background-color: #9ad3de; padding-left: 0px; padding-right: 0px">
-                            <img id="profile-image" src="/images/my_picture.jpg">
-                            <div class="row">
-                                <pre class="col-md-11" id="text_about_me" rows="12" cols="400">
-What is going on with these stupid people i have no idea. kazkokie sudai tikrai vyksta, bet kas tai gali suprasti as nezinau. Kauno Zalgitis buvo ir bus stipriausi ir niekas jiems.  
-                            </pre>
-                            </div>
-                            
+                             </div> 
                         </div>
                     </div>
                 </div>
