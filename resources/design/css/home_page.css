@@ -21,9 +21,10 @@
 }
 .button-with-element-in-middle {
     padding-top: 8px;
-    font-size: 20px;
+    /*font-size: 20px;
     color: black;
-    font-weight: bold;
+    font-weight: bold; */
+    color: #333;
     background-color: #e3e3e3;
     border-color: #e3e3e3;
 }
@@ -57,16 +58,30 @@
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-#inquiry_form {
-    border: 10px solid transparent;
-    padding: 5px;
-    -webkit-border-image: url(images/border-curve.png) 1 round; /* Safari 3.1-5 */
-    -o-border-image: url(images/border-curve.png) 1 round; /* Opera 11-12.1 */
-    border-image: url(border-curve.png) 25 30 10 20 repeat stretch; 
-   /* border-image-slice: 30;
-    border-image-outset: 1;
-    border-image-repeat: round; */
-  /*  border-image-slice: 30 30% 45 10%; */
-    border-image-outset: 1;
-    border-spacing: 10px;  
+.three-buttons {
+   text-align: center;
+    margin: auto;
+}
+
+.home-page-button {
+    display: inline-block;
+    margin: 0;
+}
+
+.btn-group {
+    margin: 0;
+}
+
+.subject-input {
+    margin-left: 8px;
+}
+
+@media (max-width: 991px) {
+    .btn-primary {
+        background-color: black;
+    }
+
+    .subject-input {
+    margin-left: 0px;
+}
 }
