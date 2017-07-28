@@ -11,13 +11,16 @@
             <link rel="stylesheet" href="/fonts/Acme/Acme-Regular.ttf">
             <link rel="stylesheet" href="/fonts/Lemonada/Lemonada-SemiBold.ttf">
             <link rel="stylesheet" href="/fonts/Kurale/Kurale-Regular.ttf">
+            <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+            <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
             <script type="text/javascript" src="javascript.js"></script>
         </head>
         <body>
                 <div class="container" id="div-container">
-                    <div class="row">
-                        <div class="col-md-6" style="background-color: #89bdd3">
-                            <ul style="font-size: 70px; font-family: 'Oswald'; font-weight: bold; line-height: 90%; width: 50%; margin: auto;
+                    <div class="row match-my-cols">
+                        <div class="col-md-6" style="background-color: #89bdd3; padding-right: 0px;">
+                            <ul style="font-size: 95px; font-family: 'Oswald'; font-weight: bold; line-height: 90%; width: 50%; margin: auto;
                             list-style-type:none">
                                 <li style="color: white">MY</li>
                                 <li style="color: white">NAME</li>
@@ -28,7 +31,7 @@
                              <div>
                                  <div style="width: 55%; margin: auto; margin-top: 17px; margin-bottom: 17px;">
                             <p style="font-weight: bold; font-family: 'Oswald'; font-size: 19px"> Experience in software and technologies:</p>                          
-                            <ul style="font-weight: bold; font-family: 'Arvo'; font-size: 16px">
+                            <ul style="font-weight: bold; font-family: 'Arvo', serif; font-size: 16px">
                                 <li>Programing with Java (Desktop and Android applications)</li>
                                 <li>ASP.NET MVC 5 web application framework with Visual Studio 2015</li>
                                 <li>Back-end web API development using Node.js server and MongoDB database (JavaScript)</li>
@@ -42,18 +45,14 @@
                             </ul>
                              </div>
                              </div>
-<pre style="text-align: center; border: none; background-color: #89bdd3; font-family: 'Kurale'; font-size: 19px;"> You can contact me on: </pre>
+                               
+<hr style="width: 100%; margin-right: 0; padding-right: 0; border-top: 4px double #e3e3e3; margin-bottom: 1.7em; width: 80%; margin: auto; margin-bottom: 1.5em">
 <div>
-    <div class="col-md-6">
-        <p style="text-align: center"><span class="glyphicon glyphicon-phone"></span> Tel: +45 71862945</p>
-    </div>
-    <div class="col-md-6">
-       <p style="text-align: center"><span class="glyphicon glyphicon-envelope"></span> <a style="color: #333" href="mailto:edgarasvilija@gmail.com">edgarasvilija@gmail.com</a></p> 
-    </div>             
+   <p style="text-align: center"><span class="glyphicon glyphicon-phone"></span> Tel: +45 71862945</p>
+    <div> <p style="text-align: center"><span class="glyphicon glyphicon-envelope"></span> <a style="color: #333" href="mailto:edgarasvilija@gmail.com">edgarasvilija@gmail.com</a></p>  </div>
 </div>
-
-<pre style="text-align: center; border: none; background-color: #89bdd3; font-size: 19px;"> ... or you can fill this inquiry form </pre>       
-<form action="/sendEmail" method="POST" style="margin: auto; margin-top: 20px; width:60%;">
+<hr style="width: 100%; margin-right: 0; padding-right: 0; border-top: 4px double #e3e3e3; width: 80%; margin: auto; margin-top: 1.7em;">    
+<form id="inquiry_form"" action="/sendEmail" method="POST" style="margin: auto; margin-top: 20px; width:60%;">
     <input type="email" name="email" placeholder="Email" required="required" style="background-color: #e3e3e3">
     <input id="subject-input" type="text" name="subject" placeholder="Subject" required="required" style="background-color: #e3e3e3;"> <br>
     <textarea type="text" name="message" placeholder="Message" required="required" style="width: 370px; max-width: 100%;
@@ -64,24 +63,30 @@
 </form>
 
 
+
+
                         </div>
                         <div class="col-md-6" style="background-color: #9ad3de; padding-left: 0px; padding-right: 0px;">
                             <img id="profile-image" src="/images/my_picture.jpg">
-                            
-                                <pre class="col-md-12" id="text_about_me" rows="12" cols="100" style="font-family: 'Oswald'; font-size: 16px; text-indent: 30px; margin-top: 1.3em ">
-<div style="font-family: 'Oswald'">I am a hard working and motivated person who has just finished Computer Science AP degree in Copenhagen School of Design and Technology. My career goal is to get a job role where I would be able to exploit my skills and knowledge along with being able to take responsibility and work on important projects.</div> 
-<div style="margin-top: 1px">During my free time I enjoy reading books, traveling or cultivating various outdoor sports. At the same time I do not forget software development and am usually working on developing 2D games for Android smartphones.</div> 
-<div>I consider myself being a well organized employee who is able to manage his time in an efficient and effective way. Furthermore, I am a strong team player who is able to communicate in English, Lithuanian, Danish and Russian.</div>     
-                            </pre>  
-                      
+                            <div>
+<hr class="style15">
+</div>
 <div style="text-align: center">
-<div class="btn-group">
+<div class="btn-group" style="font-family: 'Arvo', serif;">
   <a type="button" class="btn button-with-element-in-middle" href="/projects" style="font-size: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-right: solid #89bdd3">Projects</a>
   <a type="button" class="btn button-with-element-in-middle" target="_blank" href="https://github.com/EdgarasKarolina" style="font-size: 20px; border-right: solid #89bdd3">GitHub</a>
   <a type="button" class="btn button-with-element-in-middle" target="_blank" href="https://www.linkedin.com/in/edgaras-kazlauskas-62a22b64/?ppe=1" style="font-size: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px;">Linkedin</a>
 </div>
 </div>
-
+<div>
+    <hr style="width: 100%; margin-right: 0; padding-right: 0; border-top: 4px double #e3e3e3; margin-bottom: 1.7em; width: 80%; margin: auto; margin-bottom: 1.2em; margin-top: 1.5em">
+</div>
+                            
+                                <pre class="col-md-12" id="text_about_me" rows="12" cols="100" style="font-family: 'Arvo', serif; font-size: 19px; text-indent: 30px; margin-top: 0.1em; ">
+<div >I am a hard working and motivated person who has just finished Computer Science AP degree in Copenhagen School of Design and Technology. My career goal is to get a job role where I would be able to exploit my skills and knowledge along with being able to take responsibility and work on important projects.</div> 
+<div style="margin-top: 1px">During my free time I enjoy reading books, traveling or cultivating various outdoor sports. At the same time I do not forget software development and am usually working on developing 2D games for Android smartphones.</div> 
+<div>I consider myself being a well organized employee who is able to manage his time in an efficient and effective way. Furthermore, I am a strong team player who is able to communicate in English, Lithuanian, Danish and Russian.</div>   
+                                </pre> 
                     </div>
                 </div>
         </body>

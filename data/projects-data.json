@@ -3,43 +3,78 @@
         { "title": "Personal Website",
           "description": "This is my personal website where I am showing my expertises and projects",
           "language": "java",
-          "gitHub": "https://github.com/EdgarasKarolina/PersonalWebsite"
+          "gitHub": "https://github.com/EdgarasKarolina/PersonalWebsite",
+          "image1": "nuotrauka.png",
+          "image2": "nuotrauka2.png",
+          "image3": "nuotrauka.png",
+          "image4": "nuotrauka.png",
+          "image5": "nuotrauka.png"
         },
         {
             "title": "Unit-Converter",
             "description": "Unit converter web application",
             "language": "csharp",
-            "gitHub": "https://github.com/EdgarasKarolina/Unit-Converter"
+            "gitHub": "https://github.com/EdgarasKarolina/Unit-Converter",
+            "image1": "nuotrauka.png",
+            "image2": "nuotrauka2.png",
+            "image3": "nuotrauka.png",
+            "image4": "nuotrauka.png",
+            "image5": "nuotrauka.png"
         },
         {
             "title": "RealEstate",
             "description": "ASP.NET MVC 5 powered web application for a real estate company",
             "language": "csharp",
-            "gitHub": "https://github.com/EdgarasKarolina/Unit-Converter"
+            "gitHub": "https://github.com/EdgarasKarolina/Unit-Converter",
+            "image1": "nuotrauka.png",
+            "image2": "nuotrauka2.png",
+            "image3": "nuotrauka.png",
+            "image4": "nuotrauka.png",
+            "image5": "nuotrauka.png"
         },
         {
             "title": "Public Library",
             "description": "Public Library Web Application powered by ASP.NET MVC 5 framework",
             "language": "csharp",
-            "gitHub": "https://github.com/EdgarasKarolina/PublicLibraryWebApplication"
+            "gitHub": "https://github.com/EdgarasKarolina/PublicLibraryWebApplication",
+            "image1": "nuotrauka.png",
+            "image2": "nuotrauka2.png",
+            "image3": "nuotrauka.png",
+            "image4": "nuotrauka.png",
+            "image5": "nuotrauka.png"
         },
         {
             "title": "Space Shooter 1.0",
             "description": "A simple 2D Android platform game",
             "language": "Java",
-            "gitHub": "https://github.com/EdgarasKarolina/Space-Shooter-1.0"
+            "gitHub": "https://github.com/EdgarasKarolina/Space-Shooter-1.0",
+            "image1": "nuotrauka.png",
+            "image2": "nuotrauka2.png",
+            "image3": "nuotrauka.png",
+            "image4": "nuotrauka.png",
+            "image5": "nuotrauka.png"
         },
         {
             "title": "Job Track",
             "description": "A desktop application for keeping a track of worked hours for persons who have more then 1 job",
             "language": "Java",
-            "gitHub": "https://github.com/EdgarasKarolina/JobTrack"
+            "gitHub": "https://github.com/EdgarasKarolina/JobTrack",
+            "image1": "nuotrauka.png",
+            "image2": "nuotrauka2.png",
+            "image3": "nuotrauka.png",
+            "image4": "nuotrauka.png",
+            "image5": "nuotrauka.png"
         },
         {
             "title": "Tic-Tac-Toe desktop game",
             "description": "A simple Tic-Tac-Toe desktop game written in Java code",
             "language": "Java",
-            "gitHub": "https://github.com/EdgarasKarolina/Tic-Tac-Toe-game"
+            "gitHub": "https://github.com/EdgarasKarolina/Tic-Tac-Toe-game",
+            "image1": "nuotrauka.png",
+            "image2": "nuotrauka2.png",
+            "image3": "nuotrauka.png",
+            "image4": "nuotrauka.png",
+            "image5": "nuotrauka.png"
         }
     ]
 }

@@ -20,7 +20,7 @@
     width: 150px;
 }
 .button-with-element-in-middle {
-    padding-top: 8px;
+    padding-top: 11px;
     /*font-size: 20px;
     color: black;
     font-weight: bold; */
@@ -47,7 +47,7 @@
     max-width: 100%;
     word-break: keep-all; 
     padding: 15px;
-    margin: 0px;
+    margin: 0px; 
     border: none;
     background-color: #9ad3de;
 
@@ -65,7 +65,7 @@
 
 .home-page-button {
     display: inline-block;
-    margin: 0;
+    margin: 0; 
 }
 
 .btn-group {
@@ -85,3 +85,32 @@
     margin-left: 0px;
 }
 }
+
+hr.style15 {
+	border-top: 4px double #e3e3e3;
+	text-align: center;
+    width: 80%
+}
+hr.style15:after {
+	content: "Please visit my";
+	display: inline-block;
+	position: relative;
+	top: -15px; 
+	padding: 0 10px; 
+	background: #9ad3de;
+	color: #8c8b8b;
+	font-family: 'Sofia';
+    font-size: 22px;
+}
+
+/* making both sides (rows) to be of the same height */
+.row.match-my-cols {
+    overflow: hidden; 
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+/* end */
+

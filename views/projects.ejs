@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html style="background-color: #9ad3de;">
     <head>
+        <link rel="stylesheet" href="/fonts/Sofia-Regular.ttf">
         <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/design/css/projects_page.css">
         <link rel="stylesheet" type="text/css" href="/design/css/home_page.css">
+        <script type="text/javascript" src="javascript.js"></script>
 
     </head>
-    <body>
-
+    <body style="background-color: #9ad3de;">
+        <div>
+ <a type="button" class="btn button-with-element-in-middle" href="/" style="font-size: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; margin-top: 20px"><div><span class="glyphicon glyphicon-open"></span> Back to Main Page</div></a>
+        </div>
         <table class="table" style="margin-top: 4em;">
             <tr>
                 <th>
@@ -25,7 +29,7 @@
             </tr>
 
         <% for (i = 0; i < projectTitle.length; i++) { %>
-            <tr> 
+            <tr style="border-bottom-style: hidden"> 
                 <td>
                     <%= projectTitle[i] %>
                 </td>
@@ -37,15 +41,46 @@
                 </td>
                 <td>
                       <div>
-                                <a class="btn homepage-button button-with-element-in-middle" style="color: #368BC1; border-radius: 20px 20px 20px 20px" href="<%= projectGitHubLinks[i] %>" target="_blank">
+                                <a class="btn homepage-button button-with-element-in-middle" style="color: white; border-radius: 20px 20px 20px 20px; background-color:#89bdd3 " href="<%= projectGitHubLinks[i] %>" target="_blank">
                                     <div><span class="glyphicon glyphicon-open"></span> Click here!</div>
                                 </a>
                             </div>
                 </td>
-                 
+                <tr id="showRow<%=i%>" style="border-top-style: hidden" >
+                    <td colspan="4" style="text-align: center">
+                        <div style="margin-right: 20px; margin-left: 20px;">
+                         <a id="button" href="javascript: void(0);"
+    onclick="showRow('row<%=i%>', 'hideRow<%=i%>', 'showRow<%=i%>');">Show images</a>
+                    </td>
+                    </div>
+                    
+                </tr>
+                      <tr id="hideRow<%=i%>" style="display:none; text-align: center; width: 100%; border-bottom-style: hidden; ">
+                    <td colspan="4" style="text-align: center">
+                         <a id="button" href="javascript: void(0);"
+    onclick="hideRow('row<%=i%>', 'hideRow<%=i%>', 'showRow<%=i%>');">Hide images</a>
+                    </td>
+                    
+                </tr>
+              <tr  id="row<%=i%>" style="display:none;">
+                  <td class="test">
+                      <img src="/images/<%= projectImages2[i]%>">
+                  </td>
+                  <td class="test"  >
+                      <img src="/images/<%= projectImages2[i]%>">
+                  </td>
+                  <td class="test">
+                      <img src="/images/<%= projectImages2[i]%>">
+                  </td>
+                  <td class="test" >
+                      <img src="/images/<%= projectImages2[i]%>">
+                  </td>
+                  
+              </tr>
             </tr>
          <%   }  %>
         </table>
+        <a type="button" class="btn button-with-element-in-middle" href="/" style="font-size: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; margin-top: 20px"><div><span class="glyphicon glyphicon-open"></span> Back to Main Page</div></a>
 
     <body>
 </html>
