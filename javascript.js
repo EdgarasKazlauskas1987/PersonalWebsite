@@ -3,6 +3,10 @@ function resetInquiryForm()
     document.getElementById("inquiry_form").reset();
 }
 
+module.exports.belekaip = function() {
+    document.getElementById("inquiry_form").reset();
+}
+
 
 function hideRow(row1, hideRow, showRow ) {
     document.getElementById(row1).style.display = "none";
@@ -15,5 +19,9 @@ function showRow(row1, hideRow, showRow) {
     document.getElementById(hideRow).style.display = "";
     document.getElementById(showRow).style.display = "none";
    
+}
+
+module.exports.alertas = function() {
+    alert('sdfsdf');
 }
 

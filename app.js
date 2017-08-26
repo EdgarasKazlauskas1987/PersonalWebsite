@@ -3,6 +3,9 @@ var path = require('path');
 var nodemailer = require('nodemailer');
 var bodyParser = require('body-parser');
 var projectsDataFile = require('./data/projects-data.json');
+var flash = require('connect-flash');
+
+var greetings = require("./javascript");
 
 var app = express();
 
@@ -10,6 +13,14 @@ app.use(express.static(__dirname + '/resources'));
 app.use(express.static(__dirname + '/'));
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
+
+/*
+app.use(flash());
+app.use(function(req, res, next){
+    res.locals.success = req.flash('success');
+    res.locals.errors = req.flash('error');
+    next();
+}); */
 
 //var projectsDataFile = require("projects-data.json");
 
@@ -24,6 +35,11 @@ var transporter = nodemailer.createTransport({
     pass: 'kazlaskazlas'
   }
 });
+
+function resetInquiryForm2()
+{
+    document.getElementById("inquiry_form").reset();
+}
 
 app.get('/', (req, res) =>
 {
@@ -84,7 +100,9 @@ transporter.sendMail(mailOptions, function(error){
   if (error) {
     console.log(error);
   } else {
-    res.render('index');
+   
+    res.redirect('/');
+    
   }
 });
 });
