@@ -48,10 +48,10 @@
             "description": "A simple 2D Android platform game",
             "language": "Java",
             "gitHub": "https://github.com/EdgarasKarolina/Space-Shooter-1.0",
-            "image1": "nuotrauka.png",
-            "image2": "nuotrauka2.png",
-            "image3": "nuotrauka.png",
-            "image4": "nuotrauka.png",
+            "image1": "SpaceShooter1.png",
+            "image2": "SpaceShooter2.png",
+            "image3": "SpaceShooter3.png",
+            "image4": "SpaceShooter4.png",
             "image5": "nuotrauka.png"
         },
         {
