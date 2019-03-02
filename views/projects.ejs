@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html style="background-color: #9ad3de;">
+    <head>
+        <link rel="stylesheet" href="/fonts/Sofia-Regular.ttf">
+        <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/design/css/projects_page.css">
+        <link rel="stylesheet" type="text/css" href="/design/css/home_page.css">
+         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <script type="text/javascript" src="javascript.js"></script>
+
+    </head>
+    <body style="background-color: #9ad3de;">
+        <div >
+ <a type="button" class="btn button-with-element-in-middle" href="/" style="font-size: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; margin-top: 20px"><div><span class="glyphicon glyphicon-arrow-left"></span> Back to Main Page</div></a>
+        </div>
+        <table class="table" style="margin-top: 0em; margin-bottom: 0em">
+            <tr>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Programing languages
+                </th>
+                <th>
+                    Source Code
+                </th>
+            </tr>
+
+        <% for (i = 0; i < projectTitle.length; i++) { %>
+        
+            <tr class="color-or-not-div"  style="border-bottom-style: hidden;"> 
+                
+                <td style="font-family: 'Oswald'; font-weight: bold; font-size: 1.8em">
+                    <%= projectTitle[i] %>
+                </td>
+                <td style="font-family: 'Oswald'; font-weight: medium; font-size: 1.3em">
+                    <%= projectDescription[i] %>
+                </td>
+                <td style="font-family: 'Oswald'; font-weight: medium; font-size: 1.3em">
+                    <%= projectLanguage[i] %>
+                </td>
+                <td>
+                
+                      <div>
+                                <a class="btn homepage-button button-with-element-in-middle" style="color: white; border-radius: 20px 20px 20px 20px; background-color:#89bdd3 " href="<%= projectGitHubLinks[i] %>" target="_blank">
+                                    <div><span class="glyphicon glyphicon-share-alt"></span> Click here!</div>
+                                </a>
+                            </div>
+                </td>
+            </tr>
+                <tr id="showRow<%=i%>" style="border-top-style: hidden" >
+                    <td colspan="4" style="text-align: center">
+                        <div style="font-size: 1em">
+                         <a id="button" href="javascript: void(0);"
+    onclick="showRow('row<%=i%>', 'hideRow<%=i%>', 'showRow<%=i%>');"><div><span class="glyphicon glyphicon-arrow-down"></span> Show images</div></a>
+                    </td>
+                    </div>  
+                </tr>
+               
+                      <tr id="hideRow<%=i%>" style="display:none; text-align: center; width: 100%; border-bottom-style: hidden; ">
+                    <td colspan="4" style="text-align: center">
+                        <div style="font-size: 1em">
+                         <a id="button" href="javascript: void(0);"
+    onclick="hideRow('row<%=i%>', 'hideRow<%=i%>', 'showRow<%=i%>');"><div><span class="glyphicon glyphicon-arrow-up"></span> Hide images</div></a>
+                    </td>
+                    </div>
+                    
+                </tr>
+              <tr  id="row<%=i%>" style="display:none;">
+                  <td class="test">
+                      <img class="image-size enlarge" src="/images/<%= projectImages1[i]%>">
+                  </td>
+                  <td class="test"  >
+                      <img class="image-size enlarge" src="/images/<%= projectImages2[i]%>">
+                  </td>
+                  <td class="test">
+                      <img class="image-size enlarge" src="/images/<%= projectImages3[i]%>">
+                  </td>
+                  <td class="test">
+                          <img class="image-size enlarge" src="/images/<%= projectImages4[i]%>">                
+                  </td>  
+              </tr>
+              
+               
+            </tr>
+
+            <tr class="blank_row">
+    <td style="background-color: #e3e3e3" colspan="4"></td>
+</tr>
+
+           
+            
+         <%   }  %>
+        </table>
+        <a type="button" class="btn button-with-element-in-middle" href="/" style="font-size: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; margin-bottom: 1em;"><div><span class="glyphicon glyphicon-arrow-left"></span> Back to Main Page</div></a>
+
+    <body>
+</html>
