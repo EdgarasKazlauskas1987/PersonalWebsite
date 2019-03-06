@@ -46,6 +46,11 @@ app.get('/', (req, res) =>
     res.render('index');
 });
 
+app.get('/projects/ticTacToe', (req, res) =>
+{
+    res.render('Projects/ticTacToe');
+});
+
 app.get('/projects', (req, res) =>
 {
   var data = req.app.get('projectsData');
