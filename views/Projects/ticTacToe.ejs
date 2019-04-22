@@ -6,21 +6,91 @@
         <link rel="stylesheet" type="text/css" href="/design/css/projects_page.css">
         <link rel="stylesheet" type="text/css" href="/design/css/projects.css">
         <link rel="stylesheet" type="text/css" href="/design/css/home_page.css">
-         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <script type="text/javascript" src="javascript.js"></script>
     </head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
+
+
     <body style="height: 100%">
-        <div style="height: 100%" class="row">
-            <div style="background-color: #89bdd3; height: 100%" class="col-md-3">
-                <div style="margin: 30px; height: 100%">
+        <div id="content" class="row">
+            <div style="background-color: #89bdd3; height: 100%" class="col-md-4">
+                <div style="margin: 30px;">
                     other projects
                 </div>
+                <div style="margin: 30px;">
+                    technologies used
+                </div>
+                <div style="margin: 30px;">
+                    description ????
+                </div>
             </div>
-            <div style="background-color: #9ad3de;" class="col-md-9">
+            <div style="background-color: #9ad3de; height: 100%" class="col-md-8">
                 <div style="margin: 30px">
                         <h1 class="center-title">Tic Tac Toe</h1>
                 </div>
+                <div>
+                    <div class="w3-content w3-display-container">
+                            <div class="w3-display-container mySlides">
+                                <img src="/resources/images/Game1.png" style="width:70%; height:400px;">
+                                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                                French Alps
+                                </div>
+                            </div>
+                            <div class="w3-display-container mySlides">
+                                <img src="/resources/images/Game2.png" style="width:70%; height:400px;">
+                                <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                                Northern Lights
+                                </div>
+                            </div>
+                            <div class="w3-display-container mySlides">
+                                <img src="/resources/images/Game3.png" style="width:70%; height:400px;">
+                                <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                                Beautiful Mountains
+                                </div>
+                            </div>
+                            <div class="w3-display-container mySlides">
+                                <img src="/resources/images/Game4.png" style="width:70%; height:400px;">
+                                <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                                The Rain Forest
+                                </div>
+                            </div>
+                            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                </div>
+                <div>
+                    Links to GitHub
+                </div>
             </div>
         </div>
+
+        <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
+
+
+
     </body>
 </html>

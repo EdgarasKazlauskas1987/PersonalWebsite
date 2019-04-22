@@ -17,11 +17,11 @@ function hideRow(row1, hideRow, showRow ) {
 function showRow(row1, hideRow, showRow) {
     document.getElementById(row1).style.display = "";
     document.getElementById(hideRow).style.display = "";
-    document.getElementById(showRow).style.display = "none";
-   
+    document.getElementById(showRow).style.display = "none"; 
 }
 
 module.exports.alertas = function() {
     alert('sdfsdf');
 }
+
 
