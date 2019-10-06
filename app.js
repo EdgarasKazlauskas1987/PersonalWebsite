@@ -46,9 +46,44 @@ app.get('/', (req, res) =>
     res.render('index');
 });
 
+app.get('/projects/balticMarinas', (req, res) =>
+{
+    res.render('Projects/balticMarinas');
+});
+
+app.get('/projects/chronicalKidneyDiseaseAI', (req, res) =>
+{
+    res.render('Projects/chronicalKidneyDiseaseAI');
+});
+
+app.get('/projects/jobTrack', (req, res) =>
+{
+    res.render('Projects/jobTrack');
+});
+
+app.get('/projects/personalWebsite', (req, res) =>
+{
+    res.render('Projects/personalWebsite');
+});
+
+app.get('/projects/realEstate', (req, res) =>
+{
+    res.render('Projects/realEstate');
+});
+
+app.get('/projects/spaceShooter', (req, res) =>
+{
+    res.render('Projects/spaceShooter');
+});
+
 app.get('/projects/ticTacToe', (req, res) =>
 {
     res.render('Projects/ticTacToe');
+});
+
+app.get('/projects/unitConverter', (req, res) =>
+{
+    res.render('Projects/unitConverter');
 });
 
 app.get('/projects', (req, res) =>
