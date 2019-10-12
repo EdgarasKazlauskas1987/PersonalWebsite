@@ -178,7 +178,7 @@ p.my-contacts {
 } /* end */
 
 /* Styles hr lines of home page */
-#hr-over-contacts {
+#hr-over-element {
     width: 100%; 
     margin-right: 0; 
     padding-right: 0; 
@@ -189,7 +189,7 @@ p.my-contacts {
     margin-bottom: 1.5em
 }
 
-#hr-below-contacts {
+#hr-below-element {
     width: 100%; 
     margin-right: 0; 
     padding-right: 0; 
