@@ -3,77 +3,42 @@
         { "title": "Baltic Marinas",
             "description": "Web application for booking place in harbour",
             "language": "C#, MySQL",
-            "gitHub": "/projects/balticMarinas",
-            "image1": "nuotrauka.png",
-            "image2": "nuotrauka2.png",
-            "image3": "nuotrauka.png",
-            "image4": "nuotrauka.png",
-            "image5": "nuotrauka.png"
+            "gitHub": "/projects/balticMarinas"
         },
         { "title": "Personal Website",
           "description": "Website for describing my expertises and experience",
           "language": "JavaScript, HTML, CSS, NodeJS",
-          "gitHub": "/projects/personalWebsite",
-          "image1": "nuotrauka.png",
-          "image2": "nuotrauka2.png",
-          "image3": "nuotrauka.png",
-          "image4": "nuotrauka.png",
-          "image5": "nuotrauka.png"
+          "gitHub": "/projects/personalWebsite"
         },
         {
             "title": "Unit Converter",
             "description": "Unit converter web application",
             "language": "JavaScript, HTML, CSS",
-            "gitHub": "/projects/unitConverter",
-            "image1": "nuotrauka.png",
-            "image2": "nuotrauka2.png",
-            "image3": "nuotrauka.png",
-            "image4": "nuotrauka.png",
-            "image5": "nuotrauka.png"
+            "gitHub": "/projects/unitConverter"
         },
         {
             "title": "Real Estate",
             "description": "ASP.NET MVC 5 powered web application for a real estate company",
             "language": "ASP .NET MVC5, C#, HTML, CSS",
-            "gitHub": "/projects/realEstate",
-            "image1": "nuotrauka.png",
-            "image2": "nuotrauka2.png",
-            "image3": "nuotrauka.png",
-            "image4": "nuotrauka.png",
-            "image5": "nuotrauka.png"
+            "gitHub": "/projects/realEstate"
         },
         {
             "title": "Space Shooter",
             "description": "A simple 2D Android platform game",
             "language": "Java",
-            "gitHub": "/projects/spaceShooter",
-            "image1": "SpaceShooter1.png",
-            "image2": "SpaceShooter2.png",
-            "image3": "SpaceShooter3.png",
-            "image4": "SpaceShooter4.png",
-            "image5": "nuotrauka.png"
+            "gitHub": "/projects/spaceShooter"
         },
         {
             "title": "Job Track",
             "description": "A desktop application for keeping a track of worked hours in multiple jobs",
             "language": "Java, MySQL",
-            "gitHub": "/projects/jobTrack",
-            "image1": "nuotrauka.png",
-            "image2": "nuotrauka2.png",
-            "image3": "nuotrauka.png",
-            "image4": "nuotrauka.png",
-            "image5": "nuotrauka.png"
+            "gitHub": "/projects/jobTrack"
         },
         {
             "title": "Tic-Tac-Toe",
             "description": "A simple Tic-Tac-Toe desktop game written in Java code",
             "language": "Java",
-            "gitHub": "/projects/ticTacToe",
-            "image1": "Game1.png",
-            "image2": "Game2.png",
-            "image3": "Game3.png",
-            "image4": "Game4.png",
-            "image5": "nuotrauka.png"
+            "gitHub": "/projects/ticTacToe"
         }
     ]
 }
