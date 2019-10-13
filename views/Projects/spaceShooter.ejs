@@ -1,13 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html style="height:100%; margin:0;">
     <head>
         <link rel="stylesheet" href="/fonts/Sofia-Regular.ttf">
         <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/design/css/projects_page.css">
+        <link rel="stylesheet" type="text/css" href="/design/css/projects_shared.css">
         <link rel="stylesheet" type="text/css" href="/design/css/home_page.css">
          <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <script type="text/javascript" src="javascript.js"></script>
     </head>
-    <body style="background-color: #9ad3de; margin: 60px;">
-    <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
+    <body style="height: 100%">
+            <div id="content" class="row">
+                <div style="background-color: #89bdd3; height: 100%" class="col-md-4">
+                    <hr id="hr-below-element">
+                    <div>
+                        <a class="btn homepage-button button-with-element-in-middle" style=" margin-left: 30px; margin-top:15px; color: white; background-color:#89bdd3" href="/projects">
+                            <div><span class="glyphicon glyphicon-chevron-left"></span>   Back</div>
+                        </a>
+                    </div>
+                    <div style="margin: 30px;">
+                        Technologies
+                        <ul>
+                            <li>Java</li>
+                            <li>IntelliJ IDEA</li>
+                        </ul>
+                    </div>
+                    <div style="margin: 30px;">
+                        Prerequisites
+                        <ul>
+                            <li>IntelliJ IDE (or any other) installed</li>
+                        </ul>
+                    </div>
+                    <div style="margin: 30px;">
+                        Running
+                        <ul>
+                            <li>Run Start.java file</li>
+                            <li>Choose "vs Friend" game mode</li>
+                            <li>Insert credentials of the players</li>
+                            <li>Start the game</li>
+                        </ul>
+                    </div>
+                    <div style="margin: 30px;">
+                        Links to Repository:
+                        <ul style="list-style-type: none;">
+                            <li>
+                                <a target="_blank" href="https://github.com/EdgarasKazlauskas1987/Tic-Tac-Toe-game"> <img src="/resources/images/Shared/github.png" width="110" height="50" alt="Italian Trulli"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr id="hr-over-element">
+                    <div style="margin: 30px;">
+                            Other projects
+                            <ul>
+                                <li>Space Shooter</li>
+                                <li>Personal Website</li>
+                                <li>Baltic Marinas</li>
+                                <li>Real Estate</li>
+                                <li>Chronical Kidney Disease AI recognition</li>
+                            </ul>
+                    </div>
+                    <hr id="hr-below-element">
+                </div>
+                <div style="background-color: #9ad3de; height: 100%" class="col-md-8">
+                    <div style="margin: 30px">
+                            <h1 class="center-project-title">Space Shooter</h1>
+                    </div>
+                    <div>
+                        <div class="w3-content w3-display-container">
+                                <div class="w3-display-container mySlides">
+                                    <img src="/resources/images/TicTacToe/Start.png" style="display:block; margin-left:auto; margin-right:auto; width:35%; height:400px;">
+                                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black"></div>
+                                    </div>
+                                </div>
+                                <div class="w3-display-container mySlides">
+                                    <img src="/resources/images/TicTacToe/Credentials.png" style="display:block; margin-left:auto; margin-right:auto; width:55%; height:400px;">
+                                    <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                                    </div>
+                                </div>
+                                <div class="w3-display-container mySlides">
+                                    <img src="/resources/images/TicTacToe/Gameplay.png" style="display:block; margin-left:auto; margin-right:auto; width:70%; height:400px;">
+                                    <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                                    </div>
+                                </div>
+                                <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                                <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+                    </div>
+                    <article>
+                        <p>
+                            A classic desktop game of Tic-tac-toe where two players are taking turns in setting X's and 0's on the board.
+                        </p>
+                    </article>
+                </div>
+            </div>
+    
+            <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+    
+                    function plusDivs(n) {
+                      showDivs(slideIndex += n);
+                    }
+    
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      if (n > x.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {
+                         x[i].style.display = "none";
+                      }
+                      x[slideIndex-1].style.display = "block";
+                    }
+                    </script>
+        </body>
 </html>
