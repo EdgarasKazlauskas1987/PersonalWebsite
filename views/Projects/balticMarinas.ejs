@@ -5,9 +5,94 @@
         <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/design/css/projects_page.css">
         <link rel="stylesheet" type="text/css" href="/design/css/home_page.css">
-         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-        <script type="text/javascript" src="javascript.js"></script>
+        <link rel="stylesheet" type="text/css" href="/design/css/projects_shared.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <script src="/resources/jquery/jquery-3.4.1.js"></script>
     </head>
-    <body style="background-color: #9ad3de; margin: 60px;">
+    <body>
+        <div class="container" style="width:100%;">
+            <div class="row">
+                <div class="col-md-4 fullHeight" style="background-color: #89bdd3;">
+                        <div>
+                            <a class="btn back-button-project" href="/projects">
+                                <div><span class="glyphicon glyphicon-chevron-left"></span>   Back</div>
+                            </a>
+                        </div>
+                            <hr id="hr-below-element">
+                            <div style="margin: 30px;">
+                                Technologies
+                                <ul>
+                                    <li>Java</li>
+                                    <li>IntelliJ IDEA</li>
+                                </ul>
+                            </div>
+                            <div style="margin: 30px;">
+                                Prerequisites
+                                <ul>
+                                    <li>IntelliJ IDE (or any other) installed</li>
+                                </ul>
+                            </div>
+                            <div style="margin: 30px;">
+                                Running
+                                <ul>
+                                    <li>Run Start.java file</li>
+                                    <li>Choose "vs Friend" game mode</li>
+                                    <li>Insert credentials of the players</li>
+                                    <li>Start the game</li>
+                                </ul>
+                        </div>
+                        <div style="margin: 30px;">
+                                Links to Repository:
+                                <ul style="list-style-type: none;">
+                                    <li>
+                                        <a target="_blank" href="https://github.com/EdgarasKazlauskas1987/Tic-Tac-Toe-game"> <img src="/resources/images/Shared/github.png" width="110" height="50" alt="Italian Trulli"></a>
+                                    </li>
+                                </ul>
+                        </div>
+                        <hr id="hr-over-element">
+                        <div >
+                                Other projects
+                                <ul>
+                                    <li>Space Shooter</li>
+                                    <li>Personal Website</li>
+                                    <li>Baltic Marinas</li>
+                                    <li>Real Estate</li>
+                                    <li>Chronical Kidney Disease AI recognition</li>
+                                </ul>
+                        </div>
+                </div>
+                <div class="col-md-8 fullHeight" style="background-color: #9ad3de;">
+                        <div style="margin: 30px">
+                            <h1 class="center-project-title">Baltic Marinas</h1>
+                        </div>
+                        <article>
+                            <p>
+                                Web application for booking marinas.
+                            </p>
+                        </article>
+
+                </div>
+            </div>
+        </div>
+        <script>
+                //var screenHeight = $(window).height();
+                var row = $('.fullHeight');
+                var body = document.body,
+                html = document.documentElement;
+
+                var screenHeight = Math.max( body.scrollHeight, body.offsetHeight,
+                                    html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+                row.css({
+                    'height': screenHeight + 'px',
+                });
+
+                $(window).resize(function () {
+                    screenHeight = $(window).height();
+                    row.css({
+                        'height': screenHeight + 'px',
+                    });
+                });
+        </script>
     <body>
 </html>
