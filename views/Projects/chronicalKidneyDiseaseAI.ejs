@@ -6,6 +6,11 @@
             $(function(){ $("head").load("/views/Projects/Shared/head.html") });
         </script>
     </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
     <body>
         <div class="container" style="width:100%;">
             <div class="row">
@@ -63,6 +68,22 @@
                 <div class="col-md-8 fullHeight" style="background-color: #9ad3de;">
                         <div style="margin: 30px">
                             <h1 class="center-project-title">Chronical Kidney Disease AI Project</h1>
+                        </div>
+                        <div>
+                            <div class="w3-content w3-display-container">
+                                    <div class="w3-display-container mySlides">
+                                        <img src="/resources/images/JobTrack/Login.png" style="display:block; margin-left:auto; margin-right:auto; width:35%; height:400px;">
+                                        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                                        </div>
+                                    </div>
+                                    <div class="w3-display-container mySlides">
+                                        <img src="/resources/images/JobTrack/MainView.png" style="display:block; margin-left:auto; margin-right:auto; width:70%; height:400px;">
+                                        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                                        </div>
+                                    </div>
+                                    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                                    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                            </div>
                         </div>
                         <article>
                             <p>
@@ -122,6 +143,25 @@
                         'height': screenHeight + 'px',
                     });
                 });
+        </script>
+        <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex-1].style.display = "block";
+                }
         </script>
     <body>
 </html>
