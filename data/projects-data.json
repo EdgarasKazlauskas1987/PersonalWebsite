@@ -1,5 +1,10 @@
 {
     "projects": [
+        { "title": "Kidney Disease AI",
+            "description": "AI project for predicting possibility of evolving Chronical Kidney Disease",
+            "language": "Python",
+            "gitHub": "/projects/chronicalKidneyDiseaseAI"
+        },
         { "title": "Baltic Marinas",
             "description": "Web application for booking place in harbour",
             "language": "C#, MySQL",
