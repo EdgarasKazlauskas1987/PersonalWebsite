@@ -1,119 +1,138 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/fonts/Sofia-Regular.ttf">
-        <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/design/css/projects_page.css">
-        <link rel="stylesheet" type="text/css" href="/design/css/projects_shared.css">
-        <link rel="stylesheet" type="text/css" href="/design/css/projects.css">
-        <link rel="stylesheet" type="text/css" href="/design/css/home_page.css">
-        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <script src="/resources/jquery/jquery-3.4.1.js"></script>
+        <script>
+            $(function(){ $("head").load("/views/Projects/Shared/head.html") });
+        </script>
     </head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
     .mySlides {display:none;}
     </style>
-    <body style="height: 100%">
-        <div id="content" class="row">
-            <div style="background-color: #89bdd3; height: 100%;" class="col-md-4">
-                <hr id="hr-below-element">
-                <div>
-                    <a class="btn back-button-project" href="/projects">
-                        <div><span class="glyphicon glyphicon-chevron-left"></span>   Back</div>
-                    </a>
-                </div>
-                <div style="margin: 30px;">
-                    Technologies
-                    <ul>
-                        <li>Java</li>
-                        <li>MySql relational database management system (DBMS)</li>
-                    </ul>
-                </div>
-                <div style="margin: 30px;">
-                    Prerequisites
-                    <ul>
-                        <li>NetBeans IDE (or any other) installed</li>
-                        <li>Database Management System</li>
-                    </ul>
-                </div>
-                <div style="margin: 30px;">
-                    Running
-                    <ul>
-                        <li>Run jobtrackdb.sql file in Resources folder for getting database schema and data</li>
-                        <li>Run Login.java file and create you account or use a default account with credentials:</li>
-                        <ul>
-                            <li>Username: Edga</li>
-                            <li>Password: Edga</li>
-                        </ul>
-                    </ul>
-                </div>
-                <div style="margin: 30px;">
-                    Links to Repository:
-                    <ul style="list-style-type: none;">
-                        <li>
-                            <a target="_blank" href="https://github.com/EdgarasKazlauskas1987/JobTrack"> <img src="/resources/images/Shared/github.png" width="130" height="50" alt="Italian Trulli"></a>
-                        </li>
-                    </ul>
-                </div>
-                <hr id="hr-over-element">
-                <div style="margin: 30px;">
-                        Other projects
-                        <ul>
-                            <li>Space Shooter</li>
-                            <li>Personal Website</li>
-                            <li>Baltic Marinas</li>
-                            <li>Real Estate</li>
-                            <li>Chronical Kidney Disease AI recognition</li>
-                        </ul>
-                </div>
-                <hr id="hr-below-element">
-            </div>
-            <div style="background-color: #9ad3de; height: 100%" class="col-md-8">
-                <div style="margin: 30px">
-                        <h1 class="center-project-title">Job Track</h1>
-                </div>
-                <div>
-                    <div class="w3-content w3-display-container">
-                            <div class="w3-display-container mySlides">
-                                <img src="/resources/images/JobTrack/Login.png" style="display:block; margin-left:auto; margin-right:auto; width:35%; height:400px;">
-                                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                                </div>
+    <body>
+        <div class="container" style="width:100%;">
+            <div class="row">
+                <div class="col-md-4 fullHeight" style="background-color: #89bdd3;">
+                        <div>
+                            <a class="btn back-button-project" href="/projects">
+                                <div><span class="glyphicon glyphicon-chevron-left"></span>   Back</div>
+                            </a>
+                        </div>
+                            <hr id="hr-below-element">
+                            <div style="margin: 30px;">
+                                Technologies
+                                <ul>
+                                    <li>Java</li>
+                                    <li>MySql relational database management system (DBMS)</li>
+                                </ul>
                             </div>
-                            <div class="w3-display-container mySlides">
-                                <img src="/resources/images/JobTrack/MainView.png" style="display:block; margin-left:auto; margin-right:auto; width:70%; height:400px;">
-                                <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
-                                </div>
+                            <div style="margin: 30px;">
+                                Prerequisites
+                                <ul>
+                                    <li>NetBeans IDE (or any other) installed</li>
+                                    <li>Database Management System</li>
+                                </ul>
                             </div>
-                            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-                            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-                    </div>
+                            <div style="margin: 30px;">
+                                Running
+                                <ul>
+                                    <li>Run jobtrackdb.sql file in Resources folder for getting database schema and data</li>
+                                    <li>Run Login.java file and create you account or use a default account with credentials:</li>
+                                    <ul>
+                                        <li>Username: Edga</li>
+                                        <li>Password: Edga</li>
+                                    </ul>
+                                </ul>
+                        </div>
+                        <div style="margin: 30px;">
+                                Links to Repository:
+                                <ul style="list-style-type: none;">
+                                    <li>
+                                        <a target="_blank" href="https://github.com/EdgarasKazlauskas1987/ChronicalKidneyDiseaseAIProject"> <img src="/resources/images/Shared/github.png" width="130" height="50" alt="Italian Trulli"></a>
+                                    </li>
+                                </ul>
+                        </div>
+                        <hr id="hr-over-element">
+                        <div >
+                                Other projects
+                                <ul>
+                                    <li>Space Shooter</li>
+                                    <li>Personal Website</li>
+                                    <li>Baltic Marinas</li>
+                                    <li>Real Estate</li>
+                                    <li>Chronical Kidney Disease AI recognition</li>
+                                </ul>
+                        </div>
                 </div>
-                <article>
-                    <p>
-                        A desktop application for keeping a track of worked hours for people who have multiple jobs. JobTrack allows to add unlimited ammount of work places and count both worked hours and earned money. The application can hold more than one user account.
-                    </p>
-                </article>
+                <div class="col-md-8 fullHeight" style="background-color: #9ad3de;">
+                        <div style="margin: 30px">
+                            <h1 class="center-project-title">Job Track</h1>
+                        </div>
+                        <div>
+                            <div class="w3-content w3-display-container">
+                                    <div class="w3-display-container mySlides">
+                                        <img src="/resources/images/JobTrack/Login.png" style="display:block; margin-left:auto; margin-right:auto; width:35%; height:400px;">
+                                        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                                        </div>
+                                    </div>
+                                    <div class="w3-display-container mySlides">
+                                        <img src="/resources/images/JobTrack/MainView.png" style="display:block; margin-left:auto; margin-right:auto; width:70%; height:400px;">
+                                        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                                        </div>
+                                    </div>
+                                    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                                    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                            </div>
+                        </div>
+                        <article>
+                            <p>
+                                A desktop application for keeping a track of worked hours for people who have multiple jobs.
+                                JobTrack allows to add unlimited ammount of work places and count both worked hours and earned money.
+                                The application can hold more than one user account.
+                            </p>
+                        </article>
+                </div>
             </div>
         </div>
+        <script>
+                var row = $('.fullHeight');
+                var body = document.body,
+                html = document.documentElement;
+
+                var screenHeight = Math.max( body.scrollHeight, body.offsetHeight,
+                                    html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+                row.css({
+                    'height': screenHeight + 'px',
+                });
+
+                $(window).resize(function () {
+                    screenHeight = $(window).height();
+                    row.css({
+                        'height': screenHeight + 'px',
+                    });
+                });
+        </script>
         <script>
                 var slideIndex = 1;
                 showDivs(slideIndex);
 
                 function plusDivs(n) {
-                  showDivs(slideIndex += n);
+                    showDivs(slideIndex += n);
                 }
 
                 function showDivs(n) {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides");
-                  if (n > x.length) {slideIndex = 1}
-                  if (n < 1) {slideIndex = x.length}
-                  for (i = 0; i < x.length; i++) {
-                     x[i].style.display = "none";
-                  }
-                  x[slideIndex-1].style.display = "block";
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex-1].style.display = "block";
                 }
         </script>
-    </body>
+    <body>
 </html>
