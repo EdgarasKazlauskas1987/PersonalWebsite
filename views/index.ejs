@@ -1,83 +1,96 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', rel='stylesheet', media='screen'>
-            <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
-            <link rel="stylesheet" type="text/css" href="/design/css/home_page.css">
-            <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-            <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-            <script type="text/javascript" src="app.js"></script>
-        </head>
-        <body>
-                <div class="container" id="div-container">
-                    <div class="row match-my-cols">
-                        <div class="col-md-6" id="div-left-side">
-                            <ul id="ul-title">
-                                <li style="color: white">SOFTWARE</li>
-                                <li style="color: white">DEVELOPER:</li>
-                                <li style="color: #e3e3e3">Edgaras</li>
-                                <li style="color: #e3e3e3">Kazlauskas</li>
-                            </ul>
-                             <div>
-                                 <div style="width: 55%; margin: auto; margin-top: 17px; margin-bottom: 17px;">
-                            <p class="p-skills-title"> Experience in software and technologies:</p>
-                            <ul class="ul-skills-list">
-                                <li>Programing with Java (Desktop and Android applications)</li>
-                                <li>Building Desktop and Web applications with . NET framework (C#) </li>
-                                <li>Back-end web API development using Node.js server and MongoDB database (JavaScript)</li>
-                                <li>Test automation with Selenium</li>
-                                <li>Git version control system</li>
-                            </ul>
-                            <p class="p-skills-title">Process management:</p>
-                            <ul class="ul-skills-list">
-                                <li>Experience in Agile software development frameworks like SCRUM and Extreme programing</li>
-                                <li>Unified process and pair programing</li>
-                            </ul>
-                             </div>
-                             </div>
+<html>
 
-<hr id="hr-over-element">
-<div>
-   <p class="my-contacts"><span class="glyphicon glyphicon-phone"></span> Tel: +45 71604436</p>
-   <p class="my-contacts"><span class="glyphicon glyphicon-envelope"></span> <a style="color: #333" href="mailto:edgarasvilija@gmail.com">edgarasvilija@gmail.com</a></p>
-</div>
-<hr id="hr-below-element">
+<head>
+    <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css' , rel='stylesheet' ,
+        media='screen'>
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/design/css/home_page.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <script type="text/javascript" src="app.js"></script>
+</head>
 
-<form id="inquiry_form"" action="/sendEmail" method="POST" style="margin: auto; margin-top: 20px; width:55%;">
-    <input class="inquiry-input-elements" type="email" name="email" placeholder="Email" required="required"><br>
-    <input class="inquiry-input-elements" type="text" name="subject" placeholder="Subject" required="required"> <br>
-    <textarea class="inquiry-input-elements" type="text" name="message" placeholder="Message" required="required"
-     style="height: 175px; margin-top: 8px; ; background-color: #e3e3e3"></textarea>
-    <br>
-    <input class="inquiry-buttons" type="submit" value="Send">
-    <input class="inquiry-buttons" type="button" value="Clear" onclick="resetInquiryForm()">
-</form>
-                        </div>
-                        <div class="col-md-6" id="div-right-side">
-                            <img id="profile-image" src="/images/Shared/my_picture.jpg">
-                            <div>
-<hr id="hr-over-buttons">
-</div>
-<div style="text-align: center">
-<div class="btn-group" style="font-family: 'Arvo', serif;">
-  <a type="button" class="btn button-with-element-in-middle" id="button-projects" href="/projects">Projects</a>
-  <a type="button" class="btn button-with-element-in-middle" id="button-github" target="_blank" href="https://github.com/EdgarasKazlauskas1987">GitHub</a>
-  <a type="button" class="btn button-with-element-in-middle" id="button-linkedin" target="_blank" href="https://www.linkedin.com/in/edgaras-kazlauskas-62a22b64/?ppe=1">Linkedin</a>
-</div>
-</div>
-<div>
-    <hr id="hr-below-buttons">
-</div>
+<body>
+    <div class="container" id="div-container">
+        <div class="row match-my-cols">
+            <div class="col-md-6" id="div-left-side">
+                <ul id="ul-title">
+                    <li style="color: white">SOFTWARE</li>
+                    <li style="color: white">DEVELOPER:</li>
+                    <li style="color: #e3e3e3">Edgaras</li>
+                    <li style="color: #e3e3e3">Kazlauskas</li>
+                </ul>
+                <div>
+                    <div style="width: 55%; margin: auto; margin-top: 17px; margin-bottom: 17px;">
+                        <p class="p-skills-title"> Experience in software and technologies:</p>
+                        <ul class="ul-skills-list">
+                            <li>Programing with Java (Desktop and Android applications)</li>
+                            <li>Building Desktop and Web applications with . NET framework (C#) </li>
+                            <li>Back-end web API development using Node.js server and MongoDB database (JavaScript)</li>
+                            <li>Test automation with Selenium</li>
+                            <li>Git version control system</li>
+                        </ul>
+                        <p class="p-skills-title">Process management:</p>
+                        <ul class="ul-skills-list">
+                            <li>Experience in Agile software development frameworks like SCRUM and Extreme programing
+                            </li>
+                            <li>Unified process and pair programing</li>
+                        </ul>
+                    </div>
+                </div>
 
-                                <pre class="col-md-12" id="text-about-me" rows="12" cols="100">
+                <hr id="hr-over-element">
+                <div>
+                    <p class="my-contacts"><span class="glyphicon glyphicon-phone"></span> Tel: +45 71604436</p>
+                    <p class="my-contacts"><span class="glyphicon glyphicon-envelope"></span> <a style="color: #333"
+                            href="mailto:edgarasvilija@gmail.com">edgarasvilija@gmail.com</a></p>
+                </div>
+                <hr id="hr-below-element">
+
+                <form id="inquiry_form"" action="/sendEmail" method="POST"
+                    style="margin: auto; margin-top: 20px; width:55%;">
+                    <input class="inquiry-input-elements" type="email" name="email" placeholder="Email"
+                        required="required"><br>
+                    <input class="inquiry-input-elements" type="text" name="subject" placeholder="Subject"
+                        required="required"> <br>
+                    <textarea class="inquiry-input-elements" type="text" name="message" placeholder="Message"
+                        required="required"
+                        style="height: 175px; margin-top: 8px; ; background-color: #e3e3e3"></textarea>
+                    <br>
+                    <input class="inquiry-buttons" type="submit" value="Send">
+                    <input class="inquiry-buttons" type="button" value="Clear" onclick="resetInquiryForm()">
+                </form>
+            </div>
+            <div class="col-md-6" id="div-right-side">
+                <img id="profile-image" src="/images/Shared/my_picture.jpg">
+                <div>
+                    <hr id="hr-over-buttons">
+                </div>
+                <div style="text-align: center">
+                    <div class="btn-group" style="font-family: 'Arvo', serif;">
+                        <a type="button" class="btn button-with-element-in-middle" id="button-projects"
+                            href="/projects">Projects</a>
+                        <a type="button" class="btn button-with-element-in-middle" id="button-github" target="_blank"
+                            href="https://github.com/EdgarasKazlauskas1987">GitHub</a>
+                        <a type="button" class="btn button-with-element-in-middle" id="button-linkedin" target="_blank"
+                            href="https://www.linkedin.com/in/edgaras-kazlauskas-62a22b64/?ppe=1">Linkedin</a>
+                    </div>
+                </div>
+                <div>
+                    <hr id="hr-below-buttons">
+                </div>
+
+                <pre class="col-md-12" id="text-about-me" rows="12" cols="100">
 <div>Software Developer with industry experience in building back-end applications and automating test cases. I specialize in .NET and Java while also having professional experience in working with Selenium test automation tool.</div> 
 <div style="margin-top: 1px">During my spare time I am constantly trying to increase my knowledge in already used technologies and to learn new tools. My side projects include developing Java based desktop and mobile applications. I am also interested in Artificial Intelligence and Database development.</div> 
 <div>I consider myself being a well organized person who is able to manage his time in an efficient and effective way. Furthermore, I am a strong team player who is able to communicate in English, Lithuanian, Danish and Russian.</div>   
-                                </pre> 
-                    </div>
-                </div>
-        </body>
-    </html>
+                                </pre>
+            </div>
+        </div>
+</body>
+
+</html>
 
 

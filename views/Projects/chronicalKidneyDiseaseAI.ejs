@@ -1,135 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="/resources/jquery/jquery-3.4.1.js"></script>
-        <script>
-            $(function(){ $("head").load("/views/Projects/Shared/head.html") });
-        </script>
-    </head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <body>
-        <div class="container" style="width:100%;">
-            <div class="row">
-                <div class="col-md-4 fullHeight" style="background-color: #89bdd3;">
-                        <div>
-                            <a class="btn back-button-project" href="/projects">
-                                <div><span class="glyphicon glyphicon-chevron-left"></span>   Back</div>
-                            </a>
-                        </div>
-                            <hr id="hr-below-element">
-                            <div style="margin: 30px;">
-                                Technologies
-                                <ul>
-                                    <li>Python programming language</li>
-                                    <li>Pandas library</li>
-                                    <li>Numpy library</li>
-                                    <li>Scikit-Learn machine learning library</li>
-                                </ul>
-                            </div>
-                            <div style="margin: 30px;">
-                                Prerequisites
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Anaconda installed</li>
-                                    <li>Jupyter Notebook</li>
-                                </ul>
-                            </div>
-                            <div style="margin: 30px;">
-                                Running
-                                <ul>
-                                    <li>Start Jupyter Notebook server from command line: jupyter notebook</li>
-                                    <li>Open ChronicKidneyDiseaseProject.ipynb file</li>
-                                </ul>
-                        </div>
-                        <div style="margin: 30px;">
-                                Links to Repository:
-                                <ul style="list-style-type: none;">
-                                    <li>
-                                        <a target="_blank" href="https://github.com/EdgarasKazlauskas1987/ChronicalKidneyDiseaseAIProject"> <img src="/resources/images/Shared/github.png" width="130" height="50" alt="Italian Trulli"></a>
-                                    </li>
-                                </ul>
-                        </div>
-                        <hr id="hr-over-element">
-                        <div>
-                            Other projects:
-                            <ul class="other-projects-list">
-                                <li><a href="/projects/spaceShooter">Space Shooter</a></li>
-                                <li><a href="/projects/personalWebsite">Personal Website</a></li>
-                                <li><a href="/projects/balticMarinas">Baltic Marinas</a></li>
-                                <li><a href="/projects/realEstate">Real Estate</a></li>
-                            </ul>
-                        </div>
+
+<head>
+    <script src="/resources/jquery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () { $("head").load("/views/Projects/Shared/head.html") });
+    </script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+    <div class="container" style="width:100%;">
+        <div class="row">
+            <div class="col-md-4 fullHeight" style="background-color: #89bdd3;">
+                <div>
+                    <a class="btn back-button-project" href="/projects">
+                        <div><span class="glyphicon glyphicon-chevron-left"></span> Back</div>
+                    </a>
                 </div>
-                <div class="col-md-8 fullHeight" style="background-color: #9ad3de;">
-                        <div style="margin: 30px">
-                            <h1 class="center-project-title">Chronical Kidney Disease AI Project</h1>
-                        </div>
-                        <div>
-                            <div class="w3-content w3-display-container">
-                                    <div class="w3-display-container mySlides">
-                                        <img src="/resources/images/KidneyDiseaseAI/Imports.png" style="display:block; margin-left:auto; margin-right:auto; width:750px; height:245px;">
-                                        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                                        </div>
-                                    </div>
-                                    <div class="w3-display-container mySlides">
-                                        <img src="/resources/images/KidneyDiseaseAI/ReadingData.png" style="display:block; margin-left:auto; margin-right:auto; width:750px; height:245px;">
-                                        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
-                                        </div>
-                                    </div>
-                                    <div class="w3-display-container mySlides">
-                                        <img src="/resources/images/KidneyDiseaseAI/Data.png" style="display:block; margin-left:auto; margin-right:auto; width:750px; height:245px;">
-                                        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
-                                        </div>
-                                    </div>
-                                    <div class="w3-display-container mySlides">
-                                        <img src="/resources/images/KidneyDiseaseAI/FeatureImportances.png" style="display:block; margin-left:auto; margin-right:auto; width:750px; height:245px;">
-                                        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
-                                        </div>
-                                    </div>
-                                    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-                                    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-                            </div>
-                        </div>
-                        <article>
-                            <p>
-                                Chronical Kidney Disease is one of several kidney diseases that results a gradual loss of kidney
-                                functionality which could lead to death. According to the statistics there were around 323 millions
-                                of people in the entire world which were affected by one or another form of this disease.
-                            </p>
-                            <p>
-                                Chronic kidney disease is a growing problem world-wide and therefore it is important to bring some
-                                more attention to it. CKD is comprised of 5 different stages and there are ways that the progression
-                                of kidney failure could be slowed down or stopped. Therefore it is very important to be able to discover
-                                people which are likely to have developed CKD as soon as possible.
-                            </p>
-                            <p>
-                                This project is based on Artificial Intelligence and it can be used in early discovery of patients
-                                who have developed CKD by looking in a number (24 in total) of factors which are said to be helpful
-                                while trying to indicate if a person has actually developed CKD.
-                            </p>
-                            <p>
-                                The program is processing the data gathered by various hospitals and using it to train Supervised Learning
-                                models which later on are tested in order to see how good they are in making predictions if a person has developed CKD.
-                            </p>
-                            Machine Learning algorithms used in the project:
-                            <ul>
-                                <li>Gaussian NB</li>
-                                <li>Multinomial NB</li>
-                                <li>Bernoulli NB</li>
-                                <li>Random Forest</li>
-                                <li>Logistic Regression</li>
-                                <li>Logistic Regression CV</li>
-                            </ul>
-                            Data used:
-                            <ul>
-                                <li>Data was gathered from hospitals across India</li>
-                                <li>Number of instances: 400 Number of attributes: 25</li>
-                                <li>Data source: http://archive.ics.uci.edu/ml/datasets/Chronic_Kidney_Disease</li>
-                            </ul>
-                        </article>
+                <hr id="hr-below-element">
+                <div style="margin: 30px;">
+                    Technologies
+                    <ul>
+                        <li>Python programming language</li>
+                        <li>Pandas library</li>
+                        <li>Numpy library</li>
+                        <li>Scikit-Learn machine learning library</li>
+                    </ul>
+                </div>
+                <div style="margin: 30px;">
+                    Prerequisites
+                    <ul>
+                        <li>Python</li>
+                        <li>Anaconda installed</li>
+                        <li>Jupyter Notebook</li>
+                    </ul>
+                </div>
+                <div style="margin: 30px;">
+                    Running
+                    <ul>
+                        <li>Start Jupyter Notebook server from command line: jupyter notebook</li>
+                        <li>Open ChronicKidneyDiseaseProject.ipynb file</li>
+                    </ul>
+                </div>
+                <div style="margin: 30px;">
+                    Links to Repository:
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a target="_blank"
+                                href="https://github.com/EdgarasKazlauskas1987/ChronicalKidneyDiseaseAIProject"> <img
+                                    src="/resources/images/Shared/github.png" width="130" height="50"
+                                    alt="Italian Trulli"></a>
+                        </li>
+                    </ul>
+                </div>
+                <hr id="hr-over-element">
+                <div>
+                    Other projects:
+                    <ul class="other-projects-list">
+                        <li><a href="/projects/spaceShooter">Space Shooter</a></li>
+                        <li><a href="/projects/personalWebsite">Personal Website</a></li>
+                        <li><a href="/projects/balticMarinas">Baltic Marinas</a></li>
+                        <li><a href="/projects/realEstate">Real Estate</a></li>
+                    </ul>
                 </div>
             </div>
+            <div class="col-md-8 fullHeight" style="background-color: #9ad3de;">
+                <div style="margin: 30px">
+                    <h1 class="center-project-title">Chronical Kidney Disease AI Project</h1>
+                </div>
+                <div>
+                    <div class="w3-content w3-display-container">
+                        <div class="w3-display-container mySlides">
+                            <img src="/resources/images/KidneyDiseaseAI/Imports.png"
+                                style="display:block; margin-left:auto; margin-right:auto; width:750px; height:245px;">
+                            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                            </div>
+                        </div>
+                        <div class="w3-display-container mySlides">
+                            <img src="/resources/images/KidneyDiseaseAI/ReadingData.png"
+                                style="display:block; margin-left:auto; margin-right:auto; width:750px; height:245px;">
+                            <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                            </div>
+                        </div>
+                        <div class="w3-display-container mySlides">
+                            <img src="/resources/images/KidneyDiseaseAI/Data.png"
+                                style="display:block; margin-left:auto; margin-right:auto; width:750px; height:245px;">
+                            <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                            </div>
+                        </div>
+                        <div class="w3-display-container mySlides">
+                            <img src="/resources/images/KidneyDiseaseAI/FeatureImportances.png"
+                                style="display:block; margin-left:auto; margin-right:auto; width:750px; height:245px;">
+                            <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                            </div>
+                        </div>
+                        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                </div>
+                <article>
+                    <p>
+                        Chronical Kidney Disease is one of several kidney diseases that results a gradual loss of kidney
+                        functionality which could lead to death. According to the statistics there were around 323
+                        millions
+                        of people in the entire world which were affected by one or another form of this disease.
+                    </p>
+                    <p>
+                        Chronic kidney disease is a growing problem world-wide and therefore it is important to bring
+                        some
+                        more attention to it. CKD is comprised of 5 different stages and there are ways that the
+                        progression
+                        of kidney failure could be slowed down or stopped. Therefore it is very important to be able to
+                        discover
+                        people which are likely to have developed CKD as soon as possible.
+                    </p>
+                    <p>
+                        This project is based on Artificial Intelligence and it can be used in early discovery of
+                        patients
+                        who have developed CKD by looking in a number (24 in total) of factors which are said to be
+                        helpful
+                        while trying to indicate if a person has actually developed CKD.
+                    </p>
+                    <p>
+                        The program is processing the data gathered by various hospitals and using it to train
+                        Supervised Learning
+                        models which later on are tested in order to see how good they are in making predictions if a
+                        person has developed CKD.
+                    </p>
+                    Machine Learning algorithms used in the project:
+                    <ul>
+                        <li>Gaussian NB</li>
+                        <li>Multinomial NB</li>
+                        <li>Bernoulli NB</li>
+                        <li>Random Forest</li>
+                        <li>Logistic Regression</li>
+                        <li>Logistic Regression CV</li>
+                    </ul>
+                    Data used:
+                    <ul>
+                        <li>Data was gathered from hospitals across India</li>
+                        <li>Number of instances: 400 Number of attributes: 25</li>
+                        <li>Data source: http://archive.ics.uci.edu/ml/datasets/Chronic_Kidney_Disease</li>
+                    </ul>
+                </article>
+            </div>
         </div>
+    </div>
+
     <body>
+
 </html>

@@ -1,9 +1,9 @@
 var row = $('.fullHeight');
 var body = document.body,
-html = document.documentElement;
+    html = document.documentElement;
 
-var screenHeight = Math.max( body.scrollHeight, body.offsetHeight,
-                    html.clientHeight, html.scrollHeight, html.offsetHeight );
+var screenHeight = Math.max(body.scrollHeight, body.offsetHeight,
+    html.clientHeight, html.scrollHeight, html.offsetHeight);
 
 row.css({
     'height': screenHeight + 'px',
