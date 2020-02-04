@@ -4,14 +4,14 @@
 
 #profile-image {
     width: 100%;
-    height: 600px;
+    height: 670px;
 }
 
 #div-container {
-    margin-left: 0px; 
-    margin-right: 0px; 
-    padding-left: 0px; 
-    padding-right: 0px; 
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
     width: 100%;
 }
 
@@ -19,12 +19,14 @@
     height: 45px;
     width: 150px;
 }
+
 .button-with-element-in-middle {
     padding-top: 11px;
     color: #333;
     background-color: #e3e3e3;
     border-color: #e3e3e3;
 }
+
 .button-with-element-in-middle:hover {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
 }
@@ -34,84 +36,94 @@
 }
 
 #image-not-blurry {
-    -webkit-backface-visibility: hidden; 
-    -ms-transform: translateZ(0); /* IE 9 */
-    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    -webkit-backface-visibility: hidden;
+    -ms-transform: translateZ(0);
+    /* IE 9 */
+    -webkit-transform: translateZ(0);
+    /* Chrome, Safari, Opera */
     transform: translateZ(0);
 }
 
 #text-about-me {
     max-width: 100%;
-    word-break: keep-all; 
+    word-break: keep-all;
     padding: 15px;
-    margin: 0px; 
+    margin: 0px;
     border: none;
     background-color: #9ad3de;
-    font-family: 'Oswald'; 
-    font-size: 21px; 
-    text-indent: 30px; 
+    font-family: 'Oswald';
+    font-size: 21px;
+    text-indent: 30px;
     margin-top: 0.1em;
-
-    white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: pre-wrap;
+    /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
 }
 
 .three-buttons {
-   text-align: center;
+    text-align: center;
     margin: auto;
 }
 
 .home-page-button {
     display: inline-block;
-    margin: 0; 
+    margin: 0;
 }
 
 .btn-group {
     margin: 0;
 }
 
-
 @media (max-width: 991px) {
     .btn-primary {
         background-color: black;
     }
-
     .subject-input {
-    margin-left: 0px;
-}
+        margin-left: 0px;
+    }
 }
 
 /* making both sides (rows) to be of the same height */
+
 .row.match-my-cols {
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-.row.match-my-cols [class*="col-"]{
+.row.match-my-cols [class*="col-"] {
     margin-bottom: -99999px;
     padding-bottom: 99999px;
 }
+
 /* end */
 
-
 /* Styles input elements of inquiry form */
+
 .inquiry-input-elements {
     width: 370px;
     max-width: 100%;
     font-family: 'Arvo', serif;
     background-color: #e3e3e3;
-} /* end */
+}
 
+/* end */
 
 /* Styles buttons of inquiry form */
+
 .inquiry-buttons {
     font-family: 'Arvo', serif;
-} /* end */
+}
 
+/* end */
 
 /* Styles ul list of front page title */
+
 #ul-title {
     font-size: 95px;
     font-family: 'Oswald';
@@ -119,114 +131,127 @@
     line-height: 90%;
     width: 70%;
     margin: auto;
-    list-style-type:none;
-} /* end */
+    list-style-type: none;
+}
+
+/* end */
 
 .p-skills-title {
-    font-weight: bold; 
-    font-family: 'Oswald'; 
+    font-weight: bold;
+    font-family: 'Oswald';
     font-size: 19px;
 }
 
 /* Styles ul list of skills and experience */
+
 .ul-skills-list {
-    font-weight: bold; 
-    font-family: 'Arvo', serif; 
+    font-weight: bold;
+    font-family: 'Arvo', serif;
     font-size: 16px
-} /* end */
+}
+
+/* end */
 
 /* Styles my contacts: email and phone number */
+
 p.my-contacts {
-    text-align: center; 
-    font-weight: bold; 
+    text-align: center;
+    font-weight: bold;
     font-family: 'Arvo', serif;
-} /* end */
+}
+
+/* end */
 
 /* Styles left side of home page */
+
 #div-left-side {
-    background-color: #89bdd3; 
+    background-color: #89bdd3;
     padding-right: 0px;
-} /* end */
+}
+
+/* end */
 
 /* Styles right side of home page */
+
 #div-right-side {
-    background-color: #9ad3de; 
-    padding-left: 0px; 
+    background-color: #9ad3de;
+    padding-left: 0px;
     padding-right: 0px;
-} /* end */
+}
+
+/* end */
 
 /* Styles buttons of home page */
+
 #button-projects {
-    font-size: 20px; 
-    border-top-left-radius: 20px; 
-    border-bottom-left-radius: 20px; 
+    font-size: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     border-right: solid #89bdd3;
 }
 
 #button-github {
-    font-size: 20px; 
+    font-size: 20px;
     border-right: solid #89bdd3
 }
 
 #button-linkedin {
-    font-size: 20px; 
-    border-top-right-radius: 20px; 
+    font-size: 20px;
+    border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-} /* end */
+}
+
+/* end */
 
 /* Styles hr lines of home page */
+
 #hr-over-element {
-    width: 100%; 
-    margin-right: 0; 
-    padding-right: 0; 
-    border-top: 4px double #e3e3e3; 
-    margin-bottom: 1.7em; 
-    width: 80%; 
-    margin: auto; 
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    border-top: 4px double #e3e3e3;
+    margin-bottom: 1.7em;
+    width: 80%;
+    margin: auto;
     margin-bottom: 1.5em
 }
 
 #hr-below-element {
-    width: 100%; 
-    margin-right: 0; 
-    padding-right: 0; 
-    border-top: 4px double #e3e3e3; 
-    width: 80%; 
-    margin: auto; 
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    border-top: 4px double #e3e3e3;
+    width: 80%;
+    margin: auto;
     margin-top: 1.7em;
 }
 
 #hr-over-buttons {
-	border-top: 4px double #e3e3e3;
-	text-align: center;
+    border-top: 4px double #e3e3e3;
+    text-align: center;
     width: 80%
 }
+
 #hr-over-buttons:after {
-	content: "Please visit my";
-	display: inline-block;
-	position: relative;
-	top: -15px; 
-	padding: 0 10px; 
-	background: #9ad3de;
-	color: black;
-	font-family: 'Sofia';
+    content: "Please visit my";
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    padding: 0 10px;
+    background: #9ad3de;
+    color: black;
+    font-family: 'Sofia';
     font-size: 22px;
 }
 
 #hr-below-buttons {
-	width: 100%; 
-    margin-right: 0; 
-    padding-right: 0; 
-    border-top: 4px double #e3e3e3; 
-    margin-bottom: 1.7em; 
-    width: 80%; 
-    margin: auto; 
-    margin-bottom: 1.2em; 
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    border-top: 4px double #e3e3e3;
+    margin-bottom: 1.7em;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1.2em;
     margin-top: 1.5em;
 }
-
-
-
-
-
-

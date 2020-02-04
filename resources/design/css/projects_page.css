@@ -3,10 +3,10 @@
     width: 150px;
     padding-top: 11px;
     padding-top: 11px;
-    margin-top:1%;
+    margin-top: 1%;
     color: white;
     border-color: #e3e3e3;
-    background-color:#89bdd3;
+    background-color: #89bdd3;
 }
 
 .read-more-button-projects:hover {
@@ -16,12 +16,12 @@
 .back-button-project {
     height: 45px;
     width: 150px;
-    margin-top:0px;
+    margin-top: 0px;
     margin-bottom: 10px;
     padding-top: 11px;
     color: white;
     border-color: #e3e3e3;
-    background-color:#89bdd3";
+    background-color: #89bdd3";
 }
 
 .back-button-project:hover {
@@ -33,16 +33,21 @@ th {
     color: white;
 }
 
-tr:nth-child(even){background-color: white}
-tr:nth-child(odd){background-color: white}
+tr:nth-child(even) {
+    background-color: white
+}
+
+tr:nth-child(odd) {
+    background-color: white
+}
 
 table {
-  table-layout: fixed;
-  width:100%;
+    table-layout: fixed;
+    width: 100%;
 }
 
 td {
-  width: 30px;
+    width: 30px;
 }
 
 .image-size {
@@ -56,19 +61,12 @@ td {
     }
 }
 
-.blank_row
-{
-    height: 10px !important; /* overwrites any other rules */
+.blank_row {
+    height: 10px !important;
+    /* overwrites any other rules */
 }
 
 .enlarge:hover {
-	transform:scale(10,10);
-    transform-origin:50% 50%;
+    transform: scale(10, 10);
+    transform-origin: 50% 50%;
 }
-
-
-
-
-
-
-
