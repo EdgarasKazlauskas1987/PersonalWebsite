@@ -1,9 +1,8 @@
 var express = require('express');
-var path = require('path');
 var nodemailer = require('nodemailer');
 var bodyParser = require('body-parser');
 var projectsDataFile = require('./data/projects-data.json');
-var flash = require('connect-flash');
+var favicon = require('serve-favicon');
 
 var app = express();
 
@@ -11,6 +10,7 @@ app.use(express.static(__dirname + '/resources'));
 app.use(express.static(__dirname + '/'));
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
+app.use(favicon(__dirname + '/resources/images/favicon.ico'))
 
 app.set('view engine', 'ejs');
 app.set('projectsData', projectsDataFile);
