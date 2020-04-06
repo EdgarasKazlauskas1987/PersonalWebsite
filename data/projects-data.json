@@ -6,7 +6,7 @@
             "gitHub": "/projects/chronicalKidneyDiseaseAI"
         },
         { "title": "Baltic Marinas",
-            "description": "Web application dedicated to make accomodation reservations for yachts in harbours",
+            "description": "Web application for making yacht accomodation reservations",
             "language": "C#, MySQL",
             "gitHub": "/projects/balticMarinas"
         },
