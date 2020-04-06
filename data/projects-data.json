@@ -6,18 +6,18 @@
             "gitHub": "/projects/chronicalKidneyDiseaseAI"
         },
         { "title": "Baltic Marinas",
-            "description": "Web application for booking place in harbour",
+            "description": "Web application dedicated to make accomodation reservations for yachts in harbours",
             "language": "C#, MySQL",
             "gitHub": "/projects/balticMarinas"
         },
         { "title": "Personal Website",
-          "description": "Website for describing my expertises and experience",
+          "description": "Website presenting my expertises in the software development field",
           "language": "JavaScript, HTML, CSS, NodeJS",
           "gitHub": "/projects/personalWebsite"
         },
         {
             "title": "Unit Converter",
-            "description": "Unit converter web application",
+            "description": "Online tool for converting various units of measurement",
             "language": "JavaScript, HTML, CSS",
             "gitHub": "/projects/unitConverter"
         },
@@ -29,19 +29,19 @@
         },
         {
             "title": "Space Shooter",
-            "description": "A simple 2D Android platform game",
+            "description": "2D Android platform game",
             "language": "Java",
             "gitHub": "/projects/spaceShooter"
         },
         {
             "title": "Job Track",
-            "description": "A desktop application for keeping a track of worked hours in multiple jobs",
+            "description": "Desktop application for keeping a track of worked hours in multiple jobs",
             "language": "Java, MySQL",
             "gitHub": "/projects/jobTrack"
         },
         {
             "title": "Tic-Tac-Toe",
-            "description": "A simple Tic-Tac-Toe desktop game written in Java code",
+            "description": "Tic-Tac-Toe desktop game written in Java code",
             "language": "Java",
             "gitHub": "/projects/ticTacToe"
         }
