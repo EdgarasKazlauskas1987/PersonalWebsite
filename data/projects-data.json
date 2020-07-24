@@ -12,24 +12,24 @@
         },
         { "title": "Baltic Marinas",
             "description": "Web application for making yacht accomodation reservations",
-            "language": "C#, MySQL",
+            "language": ".NET C# MySQL",
             "gitHub": "/projects/balticMarinas"
         },
         { "title": "Personal Website",
           "description": "Website presenting my expertises in the software development field",
-          "language": "JavaScript, HTML, CSS, NodeJS",
+          "language": "JavaScript HTML CSS NodeJS",
           "gitHub": "/projects/personalWebsite"
         },
         {
             "title": "Unit Converter",
             "description": "Online tool for converting various units of measurement",
-            "language": "JavaScript, HTML, CSS",
+            "language": "JavaScript HTML CSS",
             "gitHub": "/projects/unitConverter"
         },
         {
             "title": "Real Estate",
             "description": "ASP.NET MVC 5 powered web application for a real estate company",
-            "language": "ASP .NET MVC5, C#, HTML, CSS",
+            "language": ".NET C# HTML CSS",
             "gitHub": "/projects/realEstate"
         },
         {
@@ -41,7 +41,7 @@
         {
             "title": "Job Track",
             "description": "Desktop application for keeping a track of worked hours in multiple jobs",
-            "language": "Java, MySQL",
+            "language": "Java MySQL",
             "gitHub": "/projects/jobTrack"
         },
         {
