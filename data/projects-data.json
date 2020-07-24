@@ -1,5 +1,10 @@
 {
     "projects": [
+        { "title": "Dodger",
+            "description": "Desktop game where a player has to avoid enemies falling from all parts of the screen",
+            "language": "Clojure",
+            "gitHub": "/projects/dodger"
+        },
         { "title": "Kidney Disease AI",
             "description": "AI project for predicting possibility of evolving Chronical Kidney Disease",
             "language": "Python",
