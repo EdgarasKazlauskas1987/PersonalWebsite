@@ -27,6 +27,10 @@ app.get('/projects/chronicalKidneyDiseaseAI', (req, res) => {
   res.render('Projects/chronicalKidneyDiseaseAI');
 });
 
+app.get('/projects/dodger', (req, res) => {
+  res.render('Projects/dodger');
+});
+
 app.get('/projects/jobTrack', (req, res) => {
   res.render('Projects/jobTrack');
 });
